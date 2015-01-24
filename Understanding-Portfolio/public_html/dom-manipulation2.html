@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--This is sandbox code I found on the internet. NetBeans shows a lot of
+    errors and the JS does not work-->
+   <title>My Sample HTML file</title>
+   <script language="javascript" type="text/javascript">
+       
+        var parasDiv = document.getElementById(“allMyParas”);
+        var thirdPara = document.createElement(“p”);
+        thirdPara.setAttribute(“id”, “thirdParagraph”);
+        parasDiv.appendChild(thirdPara);
+        thirdPara.innerHTML = “This is my third paragraph.”;
+        parasDiv.style.borderBottom = “1px #000 solid”;
+   </script>
+</head>
+<body>
+<div id=”allMyParas” style=”border-top: 1px #000 solid;”>
+   <p id=”firstParagraph”>
+       This is my first paragraph.
+   </p>
+   <p id=”secondParagraph”>
+       This is my second paragraph.
+   </p>
+</div>
+</body>
+</html>
