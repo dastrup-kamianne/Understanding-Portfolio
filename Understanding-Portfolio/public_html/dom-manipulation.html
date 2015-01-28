@@ -12,6 +12,13 @@
                 
             var colorChange = document.getElementById("p1");
                 colorChange.style.color = "green";
+                
+            var img = new Image(); //combined object & DOM
+            var pic = document.getElementById("div1");
+            img.onload = function(){
+                pic.appendChild(img);
+            };
+            img.src = "http://upload.wikimedia.org/wikipedia/en/6/65/Hello_logo_sm.gif";
             
             //bad css change example
             //var sizeChange = document.getElementById("p2");
@@ -30,5 +37,6 @@
         <p id="p3">
             
         </p>
+        <div id="div1"></div>
     </body>
 </html>
