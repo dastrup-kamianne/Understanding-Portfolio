@@ -6,12 +6,13 @@
    <title>My Sample HTML file</title>
    <script language="javascript" type="text/javascript">
        
+    window.onload = function(){
         var parasDiv = document.getElementById(“allMyParas”);
         var thirdPara = document.createElement(“p”);
         thirdPara.setAttribute(“id”, “thirdParagraph”);
         parasDiv.appendChild(thirdPara);
         thirdPara.innerHTML = “This is my third paragraph.”;
-        parasDiv.style.borderBottom = “1px #000 solid”;
+        parasDiv.style.borderBottom = “1px #000 solid”;};
    </script>
 </head>
 <body>
