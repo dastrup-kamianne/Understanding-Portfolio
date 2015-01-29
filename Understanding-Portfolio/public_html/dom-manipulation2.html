@@ -5,24 +5,34 @@
     errors and the JS does not work-->
    <title>My Sample HTML file</title>
    <script language="javascript" type="text/javascript">
-       
-    window.onload = function(){
+    
+    //this was a bad js example, too many errors, didn't work
+    /*window.onload = function(){
         var parasDiv = document.getElementById(“allMyParas”);
         var thirdPara = document.createElement(“p”);
         thirdPara.setAttribute(“id”, “thirdParagraph”);
         parasDiv.appendChild(thirdPara);
         thirdPara.innerHTML = “This is my third paragraph.”;
-        parasDiv.style.borderBottom = “1px #000 solid”;};
+        parasDiv.style.borderBottom = “1px #000 solid”;};*/
+        
    </script>
 </head>
 <body>
-<div id=”allMyParas” style=”border-top: 1px #000 solid;”>
+<!---html part of bad example
+    <div id=”allMyParas” style=”border-top: 1px #000 solid;”>
    <p id=”firstParagraph”>
        This is my first paragraph.
    </p>
    <p id=”secondParagraph”>
        This is my second paragraph.
    </p>
-</div>
+</div>--->
+
+<!---Here is a better example of DOM manipulation from W3 Schools--->
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = "Hello World!";
+</script>
 </body>
 </html>
