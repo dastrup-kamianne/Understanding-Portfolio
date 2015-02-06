@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--
+This is my sandbox code for CSS animation
+-->
+<html>
+    <head>
+        <title>CSS Animation</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <style>
+            div{
+                background: purple;
+                height: 500px;
+                width: 500px;
+                -webkit-animation: letsdoit 3s;
+                animation: letsdoit 3s;
+            }
+            @-webkit-keyframes letsdoit{
+                0% {background: purple;}
+                25% {background: pink;}
+                50% {background: blue;}
+                75% {background: black;}
+                100% {background: purple;}
+            }
+            @keyframes letsdoit{
+                0% {background: purple;}
+                25% {background: pink;}
+                50% {background: blue;}
+                75% {background: black;}
+                100% {background: purple;}
+            }
+        </style>
+    </head>
+    <body>
+        <div></div>
+    </body>
+</html>
