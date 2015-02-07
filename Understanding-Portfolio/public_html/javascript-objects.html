@@ -8,15 +8,24 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script language="javascript" type='text/javascript'>
         
+        function makeList(){
             var shopping = new Object();
-            shopping.item = "Milk";
-            shopping.quantity = 2;
+            shopping.item = (document.getElementById("newitem"));
+            shopping.quantity = parseInt(document.getElementById("newquantity").value);
             
-            document.write("I need" + shopping.quantity + shopping.item);
+            document.getElementById("output").innerHTML = "I need " + shopping.quantity + " " + shopping.item;
+            
+    }; 
         </script>
     </head>
     <body>
         <div>This page provides sandbox code for Javascript objects</div>
+        <form>
+            <p>Item<input id="newitem"></p><br>
+            <p>Quantity<input id="newquantity"></p><br>
+            <button type="button" onclick="makeList();">Add New</button>
+        </form><br>
+        <p id="output"></p>
     </body>
     
 </html>
