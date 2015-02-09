@@ -13,12 +13,15 @@ This is sandbox code I created
                 background-color: red;
                 height: 300px;
                 width: 300px;
+                color: white;
             }
             
             
             div:hover{
                 background-color: black;
-                transition: 0s background-color 10s;}
+                transition-duration: 5s;
+                transition-property: background-color;
+            }
              
             #uno:hover{
                 transition-timing-function: ease;
@@ -42,11 +45,11 @@ This is sandbox code I created
             
     </head>
     <body>
-        <div id="uno"></div><br>
-        <div id="dos"></div><br>
-        <div id="tres"></div><br>
-        <div id="cuatro"></div><br>
-        <div id="cinco"></div><br>
-        <div id="seis"></div><br>
+        <div id="uno">EASE</div><br>
+        <div id="dos">LINEAR</div><br>
+        <div id="tres">EASE-IN</div><br>
+        <div id="cuatro">EASE-OUT</div><br>
+        <div id="cinco">STEP-START</div><br>
+        <div id="seis">STEP-END</div>
     </body>
 </html>
