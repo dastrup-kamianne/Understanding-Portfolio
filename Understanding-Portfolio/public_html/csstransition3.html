@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--
+This is sandbox code I created
+-->
+<html>
+    <head>
+        <title>CSS Transitions</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <style>
+            div{
+                background-color: red;
+                height: 300px;
+                width: 300px;
+            }
+            
+            
+            div:hover{
+                background-color: black;
+                transition: 0s background-color 10s;}
+             
+            #uno:hover{
+                transition-timing-function: ease;
+            }
+            #dos:hover{
+                transition-timing-function: linear;
+            }
+            #tres:hover{
+                transition-timing-function: ease-in;
+            }
+            #cuatro:hover{
+                transition-timing-function: ease-out;
+            }
+            #cinco:hover{
+                transition-timing-function: step-start;
+            }
+            #seis:hover{
+                transition-timing-function: step-end;
+            }
+        </style>
+            
+    </head>
+    <body>
+        <div id="uno"></div><br>
+        <div id="dos"></div><br>
+        <div id="tres"></div><br>
+        <div id="cuatro"></div><br>
+        <div id="cinco"></div><br>
+        <div id="seis"></div><br>
+    </body>
+</html>
