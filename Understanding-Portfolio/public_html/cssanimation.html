@@ -13,8 +13,9 @@ This is my sandbox code for CSS animation
                 background: purple;
                 height: 500px;
                 width: 500px;
-                -webkit-animation: letsdoit 3s;
+                -webkit-animation: letsdoit 3s step-start;
                 animation: letsdoit 3s;
+                animation-timing-function: linear;
             }
             @-webkit-keyframes letsdoit{
                 0% {background: purple;}
@@ -38,23 +39,31 @@ This is my sandbox code for CSS animation
             }
             @-webkit-keyframes heartbeat{
                 0% {font-size: 16px; color: red;}
+                15% {font-size: 16px; color: red;}
                 20% {font-size: 30px; color: pink;}
                 25% {font-size: 16px; color: red;}
+                40% {font-size: 16px; color: red;}
                 45% {font-size: 30px; color: pink;}
                 50% {font-size: 16px; color: red;}
+                65% {font-size: 16px; color: red;}
                 70% {font-size: 30px; color: pink;}
                 75% {font-size: 16px; color: red;}
+                90% {font-size: 16px; color: red;}
                 95% {font-size: 30px; color: pink;}
                 100% {font-size: 16px; color: red;}
             }
             @keyframes heartbeat{
                 0% {font-size: 16px; color: red;}
+                15% {font-size: 16px; color: red;}
                 20% {font-size: 30px; color: pink;}
                 25% {font-size: 16px; color: red;}
+                40% {font-size: 16px; color: red;}
                 45% {font-size: 30px; color: pink;}
                 50% {font-size: 16px; color: red;}
+                65% {font-size: 16px; color: red;}
                 70% {font-size: 30px; color: pink;}
                 75% {font-size: 16px; color: red;}
+                90% {font-size: 16px; color: red;}
                 95% {font-size: 30px; color: pink;}
                 100% {font-size: 16px; color: red;}
             }
