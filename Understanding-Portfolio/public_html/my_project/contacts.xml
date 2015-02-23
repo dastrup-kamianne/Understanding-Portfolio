@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+XML contact list
+-->
+<root>
+<DIRECTORY>
+    <CONTACT>
+        <FIRSTNAME>Clark</FIRSTNAME>
+        <LASTNAME>Kent</LASTNAME>
+        <ADDRESS>234 E Street</ADDRESS>
+        <CITY>New York City</CITY>
+        <STATE>NY</STATE>
+        <ZIP>10023</ZIP>
+        <PHONE>555-865-4114</PHONE>
+        <EMAIL>superman@gmail.com</EMAIL>
+    </CONTACT>
+    <CONTACT>
+        <FIRSTNAME>Minnie</FIRSTNAME>
+        <LASTNAME>Mouse</LASTNAME>
+        <ADDRESS>33 Main Street</ADDRESS>
+        <CITY>Anaheim</CITY>
+        <STATE>CA</STATE>
+        <ZIP>98584</ZIP>
+        <PHONE>333-555-8888</PHONE>
+        <EMAIL>minnie.mouse@disney.com</EMAIL>
+    </CONTACT>
+    <CONTACT>
+        <FIRSTNAME>Captain</FIRSTNAME>
+        <LASTNAME>Hook</LASTNAME>
+        <ADDRESS>Pirate Ship</ADDRESS>
+        <CITY>Neverland</CITY>
+        <STATE>NV</STATE>
+        <ZIP>54321</ZIP>
+        <PHONE>777-777-1313</PHONE>
+        <EMAIL>nocrocodiles@neverland.com</EMAIL>
+    </CONTACT>
+</DIRECTORY>
+
+
+</root>
