@@ -2,6 +2,7 @@
 <html>
 <head>
 <script>
+    var x = sessionStorage.clickcount;
 function clickCounter() {
     if(typeof(Storage) !== "undefined") {
         if (sessionStorage.clickcount) {
@@ -9,7 +10,7 @@ function clickCounter() {
         } else {
             sessionStorage.clickcount = 1;
         }
-        var x = sessionStorage.clickcount;
+        
         var list = [23,42];
         list[x] = document.getElementById("input1").value;
         document.getElementById("result").innerHTML = list;
@@ -17,13 +18,18 @@ function clickCounter() {
         document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
     }
 }
+function reset(){
+    x=0;
+}
 </script>
 </head>
 <body>
-<p><button onclick="clickCounter()" type="button">Click me!</button></p>
+<p><button onclick="clickCounter()" type="button">Add a number</button>
+    <button onclick="reset()">Reset</button>
+</p>
 <input id="input1" type="number"> 
 <div id="result"></div>
-<p>Click the button to see the counter increase.</p>
+<p>Insert a number to add to the array</p>
 <p>Close the browser tab (or window), and try again, and the counter will continue to count (is not reset).</p>
 </body>
 </html>
