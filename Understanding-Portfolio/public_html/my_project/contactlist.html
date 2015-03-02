@@ -37,7 +37,7 @@ This is my sandbox code
                                     txt = txt + "<br>";
                                 }
                             }
-                            xx = x[i].getElementsByTagName ("LASTNAME"); 
+                            xx = x[i].getElementsByTagName("LASTNAME"); 
                             {
                                 try
                                 {
@@ -50,37 +50,15 @@ This is my sandbox code
                             }
                         }
                         document.getElementById("contactlist").innerHTML = txt;
-            //document.getElementById("contactlist").innerHTML = xmlhttp.responseText;
+            
                     }
                 }
                 xmlhttp.open("GET", "contacts.xml", true);
                 xmlhttp.send();
             }
+        </script>
+        <script type="text/javascript" src="addcontact.js">
             
-            function addContact(){
-                var fname = document.getElementById("firstname");
-                var xmlDoc,oldNode,newNode,x;
-                function loadXMLDocument("contacts.xml"){
-                    if (window.XMLHttpRequest)
-                    {
-                        xhttp = new XMLHttpRequest();
-                    }
-                    else
-                    {
-                        xhttp = new ActiveXObject("Microsoft.XMLHTTP");
-                    }
-                    xhttp.opn("GET","contacts.xml",true);
-                    xhttp.send();
-                    return xhttp.responseXML;
-                    }    
-                                
-                oldNode = xmlDoc.getElementsByTagName("CONTACT")[0];
-                newNode = oldNode.cloneNode(true);
-                xmlDoc.documentElement.appendChild(newNode);
-                
-                x = xmlDoc.getElementsByTagName("FIRSTNAME")[CONTACT.length - 1].childNodes[CONTACT.length - 1];
-                x.nodeValue = fname;
-            }
         </script>
     </head>
     <body>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--
+This is my sandbox code.
+-->
+<html>
+    <head>
+        <title>JSON</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    
+    </head>
+    <body>
+        <h2>JSON</h2>
+        <div id="example"></div>
+        <div>
+            
+            <button type="button" onclick="makeList()">Add item</button>
+            </div>
+        
+        
+        <script>
+            function makeList(){
+            var x= window.prompt("Item needed:");
+            var y= window.prompt('Quantity needed:');
+            var input= '{"shopping":[' +
+                '{"item":"milk","quantity":"2" },' +
+                '{"item":"eggs","quantity":"12" },' +
+                '{"item":"chocolate","quantity":"50" }]}';
+            
+            var list = JSON.parse(input);
+            
+                list.shopping[2].item = x
+                list.shopping[2].quantity = y;
+            window.alert("You added " + y + " " + x + " to your list");
+            
+            document.getElementById("example").innerHTML = 
+                    "I need " + list.shopping[0].quantity + " " + list.shopping[0].item + ".<br>" +
+                    "I need " + list.shopping[1].quantity + " " + list.shopping[1].item + ".<br>" +
+                    "I need " + list.shopping[2].quantity + " " + list.shopping[2].item + ".";
+        }
+        </script>
+    </body>
+</html>

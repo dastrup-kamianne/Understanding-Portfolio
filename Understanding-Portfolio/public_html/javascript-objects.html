@@ -21,19 +21,21 @@
             this.place = p;
             this.rings = r;
             this.moons = m;
-    
         }
-        var planet1 = new planet(Mercury, 1, no, 0);
-        var planet2 = new planet(Venus, 2, no, 0);
-        var planet3 = new planet(Earth, 3, no, 1);
-        var planet4 = new planet(Mars, 4, no, 2);
-        var planet5 = new planet(Jupiter, 5, yes, 63);
-        var planet6 = new planet(Saturn, 6, yes, 31);
-        var planet7 = new planet(Uranus, 7, yes, 27);
-        var planet8 = new planet(Neptune, 8, yes, 13);
+        
+        var planet1 = new planet("Mercury", 1, "no", 0);
+        var planet2 = new planet("Venus", 2, "no", 0);
+        var planet3 = new planet("Earth", 3, "no", 1);
+        var planet4 = new planet("Mars", 4, "no", 2);
+        var planet5 = new planet("Jupiter", 5, "yes", 63);
+        var planet6 = new planet("Saturn", 6, "yes", 31);
+        var planet7 = new planet("Uranus", 7, "yes", 27);
+        var planet8 = new planet("Neptune", 8, "yes", 13);
         //fix JS display for planet output
+        
+        function planetRocks(){
         document.getElementById("planetoutput").innerHTML = planet3.name + " rocks!";
-      
+        }
         </script>
     </head>
     <body>
@@ -45,8 +47,14 @@
         </form><br>
         <p id="output"></p>
         
-        <button type="button" onclick="planet();">Planets</button>
+        <button type="button" onclick="planetRocks();">Planets</button>
         <p id="planetoutput"></p>
+    
+        
+        
+        
+        
+    
     </body>
     
 </html>
