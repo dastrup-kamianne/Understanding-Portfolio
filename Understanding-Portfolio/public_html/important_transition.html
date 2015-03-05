@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--
+
+-->
+<html>
+    <head>
+        <title>Shopping List</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            function hoverImage(element){
+                element.setAttribute("src", 'imp3.png');
+            }
+            function unhoverImage(element){
+                if (document.getElementById("important").src === "imp3.png")
+                {
+                    element.setAttribute("src", "imp1.png");
+                }
+                else
+                {
+                    element.setAttribute("src", "imp2.png");
+                }
+            }
+            function changeImage(element){
+                if (document.getElementById("important").src === "imp1.png")
+                {
+                    element.setAttribute("src", "imp2.png");
+                }
+                else
+                {
+                    element.setAttribute("src", "imp2.png");
+                }
+            }
+        </script> 
+        <style>
+            #important{
+                height: 50px;
+                width: 50px;
+                
+        </style>
+    </head>
+    <body>
+        <img src="imp1.png" alt="Mark as important" id="important" onclick="changeImage(this);"
+            onmouseover="hoverImage(this);" onmouseout="unhoverImage(this);">
+               <br>
+    </body>
+</html>
