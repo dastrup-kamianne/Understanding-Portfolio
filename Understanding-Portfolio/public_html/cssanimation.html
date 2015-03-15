@@ -13,7 +13,7 @@ This is my sandbox code for CSS animation
                 background: purple;
                 height: 500px;
                 width: 500px;
-                -webkit-animation: letsdoit 3s step-start;
+                -webkit-animation: letsdoit 3s linear;
                 animation: letsdoit 3s;
                 animation-timing-function: linear;
             }
@@ -34,8 +34,8 @@ This is my sandbox code for CSS animation
             h1{
                 font-size: 16px;
                 color: red;
-                -webkit-animation: heartbeat 10s;
-                animation: heartbeat 10s;
+                -webkit-animation: heartbeat 10s step-start;
+                animation: heartbeat 10s step-start;
             }
             @-webkit-keyframes heartbeat{
                 0% {font-size: 16px; color: red;}

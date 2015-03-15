@@ -7,28 +7,26 @@
         <title>Shopping List</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
         <script>
-            function hoverImage(element){
-                element.setAttribute("src", 'imp3.png');
-            }
-            function unhoverImage(element){
-                if (document.getElementById("important").src === "imp3.png")
+        $(document).on("pagecreate","#important",function(){
+          $("img").on("tap",function(){
+            $(this).attr("src","imp2.png");
+          });                       
+        });
+       </script>-->
+        
+        <script>
+            function changeImage(){
+                var important = document.getElementById("important");
+                if (important.src == "http://dastrupdevelopment.com/imp1.png")
                 {
-                    element.setAttribute("src", "imp1.png");
+                    important.src = "http://dastrupdevelopment.com/imp2.png";
                 }
                 else
                 {
-                    element.setAttribute("src", "imp2.png");
-                }
-            }
-            function changeImage(element){
-                if (document.getElementById("important").src === "imp1.png")
-                {
-                    element.setAttribute("src", "imp2.png");
-                }
-                else
-                {
-                    element.setAttribute("src", "imp2.png");
+                    important.src = "http://dastrupdevelopment.com/imp1.png";
                 }
             }
         </script> 
@@ -40,8 +38,8 @@
         </style>
     </head>
     <body>
-        <img src="imp1.png" alt="Mark as important" id="important" onclick="changeImage(this);"
-            onmouseover="hoverImage(this);" onmouseout="unhoverImage(this);">
-               <br>
+        
+        <img src="imp1.png" alt="Mark as important" id="important" onclick="changeImage();">
+        
     </body>
 </html>
